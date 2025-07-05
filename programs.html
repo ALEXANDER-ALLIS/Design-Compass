@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Программы обучения - Design Compass</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Design Compass</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="programs.html">Программы</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="programs-filter">
+            <div class="container">
+                <h2>Фильтр программ</h2>
+                <form id="program-filter-form">
+                    <div class="filter-group">
+                        <label for="category">Категория:</label>
+                        <select id="category" name="category">
+                            <option value="all">Все</option>
+                            <option value="graphic-design">Графический дизайн</option>
+                            <option value="web-design">Веб-дизайн</option>
+                            <option value="ux-ui">UX/UI Дизайн</option>
+                            <option value="motion-design">Motion Design</option>
+                            <option value="interior-design">Дизайн интерьера</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="duration">Длительность:</label>
+                        <select id="duration" name="duration">
+                            <option value="all">Любая</option>
+                            <option value="short">Краткосрочные</option>
+                            <option value="medium">Среднесрочные</option>
+                            <option value="long">Долгосрочные</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="button">Применить</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="popular-programs">
+            <div class="container">
+                <h2>Популярные программы по категориям</h2>
+                <div class="category-tabs">
+                    <button class="tab-button active" data-category="all">Все</button>
+                    <button class="tab-button" data-category="graphic-design">Графический дизайн</button>
+                    <button class="tab-button" data-category="web-design">Веб-дизайн</button>
+                    <button class="tab-button" data-category="ux-ui">UX/UI Дизайн</button>
+                </div>
+                <div class="program-list" id="popular-programs-list">
+                    <!-- Программы будут добавлены сюда с помощью JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="programs-list">
+            <div class="container">
+                <h2>Все программы</h2>
+                <div class="program-list-grid" id="all-programs-grid">
+                    <div class="program-item" data-category="graphic-design" data-duration="medium">
+                        <h3>Графический дизайн</h3>
+                        <p>Описание программы графического дизайна...</p>
+                        <a href="#" class="button">Подробнее</a>
+                    </div>
+                    <div class="program-item" data-category="web-design" data-duration="short">
+                        <h3>Веб-дизайн</h3>
+                        <p>Описание программы веб-дизайна...</p>
+                        <a href="#" class="button">Подробнее</a>
+                    </div>
+                    <div class="program-item" data-category="ux-ui" data-duration="long">
+                        <h3>UX/UI Дизайн</h3>
+                        <p>Описание программы UX/UI дизайна...</p>
+                        <a href="#" class="button">Подробнее</a>
+                    </div>
+                    <div class="program-item" data-category="motion-design" data-duration="medium">
+                        <h3>Motion Design</h3>
+                        <p>Описание программы Motion дизайна...</p>
+                        <a href="#" class="button">Подробнее</a>
+                    </div>
+                    <div class="program-item" data-category="interior-design" data-duration="long">
+                        <h3>Дизайн интерьера</h3>
+                        <p>Описание программы дизайна интерьера...</p>
+                        <a href="#" class="button">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Design Compass</h3>
+                    <p>Ваш надежный гид в многообразном мире дизайн-образования. Мы помогаем Вам найти свой путь в дизайне.</p>
+                    <div class="contact">
+                        <span><i class="fas fa-envelope"></i> &nbsp; info@design-compass.com</span>
+                        <span><i class="fas fa-phone"></i> &nbsp; +7 (000) 000-00-00</span>
+                    </div>
+                    <div class="socials">
+                        <a href="https://github.com/ALEXANDER-ALLIS"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section links">
+                    <h3>Карта сайта</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О проекте</a></li>
+                        <li><a href="programs.html">Программы</a></li>
+                        <li><a href="resources.html">Ресурсы</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section developer">
+                    <h3>Разработчик</h3>
+                    <p> Аллис Александр Сергеевич</p>
+                    <p>Copyright &copy; 2025 Design Compass</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Секция «Авторизация/Регистрация» -->
+    <div class="floating-auth">
+        <div class="auth-toggle">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="auth-content">
+            <h3>Авторизация</h3>
+            <form id="auth-form">
+                <div class="form-group">
+                    <label for="username">Имя пользователя:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="button">Войти</button>
+                <p class="signup-link">Нет аккаунта? <a href="#">Зарегистрироваться</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
